@@ -1,8 +1,8 @@
-version: '3'
+version: '2'
 services:
 
   frontend:
-    build: ./
+    image: edceo1453/buptis-frontend:latest
     ports:
       - "80:80"
 
