@@ -1,7 +1,5 @@
 <template>
   <div>
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <p>Main Page</p>
     <div class="content-area__content">
       <transition mode="out-in">
         <router-view @changeRouteTitle="changeRouteTitle"></router-view>
