@@ -209,12 +209,10 @@ export default {
     data(){
         return{
             isOpen:false,
-            langs: ["TR", "EN"],
-            clicked:-1,
             navbarList:['nasilKullanilir','appsGallery'],
         }
     },
-      created: async function() {
+      created: function() {
     document.body.addEventListener('scroll', this.handleScroll);
   },
   destroyed() {
@@ -224,9 +222,6 @@ export default {
     handleScroll() {
       let scroll = document.body.scrollTop
     },
-     changeLang() {
-      sessionStorage.setItem("lang", this.$i18n.locale);
-    }, 
   }
 };
 </script>

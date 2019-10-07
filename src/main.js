@@ -6,9 +6,6 @@ import Vuesax from 'vuesax'
 import 'material-icons/iconfont/material-icons.css' //Material Icons
 import 'vuesax/dist/vuesax.css' // Vuesax
 
-//Js Frameworks
-import carousel from 'vue-owl-carousel'
-
 // Custom Frameworks
 import Vuelidate from 'vuelidate'
 import ApiService from '@/services/api.service'
@@ -45,8 +42,6 @@ if (TokenService.getToken()) {
 }
 
 Vue.config.productionTip = false;
-
-sessionStorage.setItem('lang', i18n.locale)
 
 new Vue({
   router,
