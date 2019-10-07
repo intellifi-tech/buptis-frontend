@@ -1,11 +1,8 @@
-/*=========================================================================================
-  File Name: globalComponents.js
-  Description: Here you can register components globally
-  ----------------------------------------------------------------------------------------
-  Item Name: Vuesax Admin - VueJS Dashboard Admin Template
-  Version: 1.1
-  Author: Pixinvent
-  Author URL: hhttp://www.themeforest.net/user/pixinvent
-==========================================================================================*/
+import Vue from "vue"
+
+// Thirt Party Components
+import Carousel from 'vue-owl-carousel'
 
 
+
+Vue.component('Carousel', Carousel)

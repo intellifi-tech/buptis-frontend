@@ -9,22 +9,40 @@ const router = new Router({
   base: process.env.BASE_URL,
   routes: [
     {
-      path: "/",
+			path: '/error404',
+			component: () => import('./views/pages/Error404.vue'),
+			meta: {
+				public: true
+			}
+    },
+    {
+			path: '/',
+			component: () => import('./views/landing/Landing.vue'),
+			meta: {
+				public: true
+			}
+		},
+    {
+      path: "",
       meta: {
         public: true
       },
       component: () => import("./layouts/Main.vue"),
       children: [
         {
-          path: "/home",
+          path: "/homex",
           component: () => import("./views/Home.vue")
         },
         {
-          path: "/about",
+          path: "/aboutx",
           component: () => import("./views/About.vue")
         }
       ]
     },
+    {
+			path: '*',
+			redirect: '/error404'
+		}
   ]
 });
 
