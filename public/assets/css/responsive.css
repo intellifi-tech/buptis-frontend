@@ -85,6 +85,10 @@
 }
 
 @media (max-width: 768px) {
+	.main-menu .navbar-nav > nav > a {
+		color:#18296d;
+		font-weight: 600;
+	} 
 	h1 {
 		font-size: 2.8rem;
 	}
@@ -94,7 +98,7 @@
 	}
 	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
 		border-color: transparent;
-		background-color: rgba(255, 255, 255, 0.88);
+		background-color: rgba(225, 225, 225, 0.98)
 	}	
 	
 	p.bannerDescription {
@@ -144,7 +148,7 @@
 	a{font-size:14px;}
 	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
 		border-color: transparent;
-		background-color: rgba(255, 255, 255, 0.88);
+		background-color: rgba(225, 225, 225, 0.98)
 	}
 	
 	.single_works_2_text i {

@@ -234,7 +234,8 @@ p.description {
 }
 
 .main-menu.tiny .navbar-nav > li > a ,.main-menu.tiny .scrollactive-item {
-	color:#adadad;
+	color:#23388f;
+	transition: all .5s ease;
 }
 .main-menu.tiny .navbar-nav > li > a:hover {
 	color:#23388f;
